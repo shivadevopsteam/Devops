@@ -12,13 +12,96 @@ day 1 : ( 08-11-2022 )
 day 2 : (08-11-2022)
 =====================
 
+How to choose Distro : 
+
+Distro should be chosen based upon user requirement. like 
+1-> purpose of use : personal or professional.
+2-> easy to install : configuration is done with default values or it is manually chosen?
+3-> look and feel : graphical interface or command line interface.
+
+below are some useful Distro examples : 
+Ubuntu --> most popular linux distro
+            secure and reliable.
+            multi-variant releases. ex: destop,server.
+            frequent releases.
+            easy to use.
+            it contains a wide range of softwares like LibreOffice, thunderbird etc. and also games such as suduko and chess.
+            
+ Fedora --> latest tech having huge support base
+            new releases frequently
+            easily customizable
+            can upgrade versions without reinstalling
+            stable and reliable
+            easy to use.
+            
 REHL - redhat updates for every 12-18 months cycle they will release new commercial.
       - present rehl 8 - stable, support. 
       
 Fedora - 6-8 months- non commercial release
-          present version fedora 31 - unstable, no support open source free.
-          
-          
+         - present version fedora 31 - unstable, no support open source free.
+===================================================================================================
+File : 
+=======
+       -- you dont need a command to check the cpu info, but can print the file "/proc/cpuinfo" like a simple plain text file.
+       -- There are some special files that represent hardware devices, system information, etc.
+       -- The /proc filesystem in Linux gives detail about the kernels runtime operations in form of plain text files.
+       -- file means group of text.
+linux commands : 
+                  touch filename.txt --> to create one empty file we use touch command followed by filename.
+                  touch <filename1.txt>,<filename2.txt>  --> to create more than one.
+                  touch < file{1,2,3,4,5,..}.txt > -->to create multiple files in easy way, it creates file1.txt, file2.txt, file3.txt .....
+                  to read created file we can use this cmd --> file file1.txt
+
+                  ls -> list 
+                  Ls -l --> l means symbolic link (shortcut to a file/ directory).
+                  in output if first letter is d then it is directory.
+                  example : if we type LS -L --> then o/p is drwrx-2..(mode of permission)   2    userownership  group ownership   size of file/ directory .
+                  
+ Types of files in directory : 
+                  --> here in o/p if first letter is d then it is normal directory
+                                                L then symbolic link ( shortcut to file/document ) 
+                                                      we have 2 categories in symbolic link ( soft link and hard link not discussed)
+                                                - normal file
+                                                S Socket  (pass the data between 2 processes)
+                                                P pipe ( similira to Socket but users cannot work direclty)
+                                                C processes character hardware communication.
+                                                
+ --> check the first letter which describes the file type
+ --> Based on distro each file type assigned with different color code.                                                
+                                                                 
+                
+Run Level :
+==========
+1 - Init --> figures out the default run-level to start the associated script with respect to the configured run level.
+            we can manually change the run level using the telinit cmd and superuser has permission to modify the run-level
+            
+2 - It is an operational level which describes the current state of the system with respect to the services available
+3 - it is a single digit integer that defines the state of the system.
+
+ex: if it is digit integer 0 - halt the system 
+                              1 - single user mode.
+                              2 - multiple user mode withno network file system.
+                              3 - multiple user mode in CLI, but no GUI
+                              4 - User definable
+                              5 - multiple user mode in GUI
+                              6 - Reboot
+                              
+        Linux cmd : shutdown -h now   --> this cmd is used to shutdown the linux system
+                    shutdown -r now  --> this cmd is used to reboot the system
+                    shutdown --help  --> it will show list of options to shutdown like reboot , halt cmds.
+                    
+                    
+ Pipe : 
+ ======
+ 1. pipe represnts as "|" , it is used to direct the o/p of one command to another .
+ 2. it creates an internal connection between 2 or more cmds.
+ 3. the data is passed to other cmds directly instead of using temporary text files.
+ 4. the pipe is unidirectional and data flows from left to right.
+ 5. Pipe along with grep is most commonly used .
+ Ex : cat file.txt | grep "linux"   -----> i.e, cat (reads data from file) file.txt | grep (filter / search) "linux"(searches the word in double quotes).
+ 
+
+===================================================================================================
 ==== LINUX COMMANDS : ====
 pwd - used to standard output the full path name of your current directory (from the root directory).
 
