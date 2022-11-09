@@ -1,0 +1,25 @@
+Devops Daily Notes.
+
+day 1 : ( 08-11-2022 )
+=======================
+1. SDLC-- waterfall adn agile models
+2. devops - what is devops/ lifecycle and tools used.
+3. VCS
+4. GIT  - about git / how to configure git / commands
+5. Linux - short description / commands and their abbrevations
+
+
+day 2 : (08-11-2022)
+=====================
+
+REHL - redhat updates for every 12-18 months cycle they will release new commercial.
+      - present rehl 8 - stable, support. 
+      
+Fedora - 6-8 months- non commercial release
+          present version fedora 31 - unstable, no support open source free.
+          
+          
+==== LINUX COMMANDS : ====
+pwd - used to standard output the full path name of your current directory (from the root directory).
+
+
