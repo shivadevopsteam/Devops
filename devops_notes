@@ -134,7 +134,7 @@ step 3: Change the permission of the script, give it executable permission and m
 step 4: Run the script --> #./script.sh
                            #bash script.sh
                            
-step 1 cmd: sudi -i --> o/p password for :
+step 1 cmd: sudo -i --> o/p password for :
             #vi script.sh
 step 2 cmd: echo "My first Script"
             echo $(date)
