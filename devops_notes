@@ -124,7 +124,59 @@ Shell Scripting  :  Shell Scripting is a series of shell  commands arranged in a
 
 
 
+Creating a Shell Script : 
+-------------------------
+step 1. to get into the root for execution sudo-i create text file and add the extension of the shell #vi script.sh 
+step 2. enter some commands in the scripts to be executed --> echo "My first Script" 
+                                                              echo $(date)
+step 3: Change the permission of the script, give it executable permission and may also give read and execute permission for the other users --> #chmod 755 script.sh
 
+step 4: Run the script --> #./script.sh
+                           #bash script.sh
+                           
+step 1 cmd: sudi -i --> o/p password for :
+            #vi script.sh
+step 2 cmd: echo "My first Script"
+            echo $(date)
+Step 3 cmd: #chmod 755 script.sh
+step 4 cmd: #./script.sh  --> o/p details about first script.
+            #bash script.sh
+            
+more cmds : 
+            clear 
+            date 
+            cal
+Practical Uses of Shell Scripting :
+----------------------------------
+1. Data backup at regular interval of time in the background.
+2. To find out the number of users and their details.
+3. find details about various process and sorting them based on cpu usage.
+4. to append each file with a signature, date, etc.
+5. for scheduling tasks to be done at network servers.
+6. creating new users by providing permissions just by entering username.
+
+
+User Interface in Linux : 
+-------------------------
+
+1. graphical user interface interacts with users with icons, folders, wallpapers, widgest and visual indicatiors to make it easier for the user to access the program
+2. For Linux, desktop environments are KDE, GNOME, CINNAMON, MATE, etc.
+
+command execution :
+-------------------
+
+1. One needs a terminal (CLI) to execute the command
+2. Multiple commands can be executed sequentially by adding " ; " in between them.
+Syntax: command<option><arguments>
+
+alias is used to convert the defined to user defined name.
+# -- is used for privilaged user -->all controls--> Super user.
+$ -- is used for non-privilaged user --> controls are restricted--> normal user.
+linux commands : 
+cal --help or man
+ls /opt   --> here ls means listing opt is a directory.
+ls -a --> it will show all listings/directories along with hidden files.
+ls -r --> reverse listing.
 
 
 
