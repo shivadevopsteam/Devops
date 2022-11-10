@@ -106,3 +106,41 @@ ex: if it is digit integer 0 - halt the system
 pwd - used to standard output the full path name of your current directory (from the root directory).
 
 
+
+
+
+
+
+
+Date 09-11-2022 
+==============
+
+Shell Scripting  :  Shell Scripting is a series of shell  commands arranged in a text file to be executed one after the other.
+                        similar to batch file in windows
+                        Helps to automate asequence of task creating and also saves time.
+                        Can be created using any normal text editor.
+                        compiled like C/CPP progran,but are Interpreted  ditectly
+                        Each shell script must have executable permission to runthe scrips.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
